@@ -25,8 +25,7 @@ jobs:
   get-parent-dir:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Get parent directory
         uses: Arbeidstilsynet/action-parent-dir@v1
