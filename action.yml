@@ -21,7 +21,5 @@ runs:
       run: |
         rel_path="${{ inputs.path }}"
         rel_path="${rel_path#./}"
-        echo "DEBUG: rel_path=$rel_path"
         parent_dir=$(dirname "$rel_path")
-        echo "DEBUG: parent_dir=$parent_dir"
         echo "parent_dir=$parent_dir" >> $GITHUB_OUTPUT
