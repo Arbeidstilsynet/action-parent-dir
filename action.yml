@@ -1,4 +1,5 @@
 name: "Get Parent Directory"
+author: "Arbeidstilsynet"
 description: "Outputs the parent directory of a given path"
 
 inputs:
