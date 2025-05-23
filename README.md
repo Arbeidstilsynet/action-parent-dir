@@ -8,14 +8,14 @@ Action to get the parent directory of a path.
 
 ## Inputs
 
-| Name | Description | Required |
-|------|-------------|----------|
-| path | The path to get the parent directory for | Yes |
+| Name | Description                              | Required |
+|------|------------------------------------------|----------|
+| path | The path to get the parent directory for | Yes      |
 
 ## Outputs
 
-| Name | Description |
-|------|-------------|
+| Name       | Description                            |
+|------------|----------------------------------------|
 | parent_dir | The parent directory of the input path |
 
 ## Usage
@@ -27,8 +27,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Get parent directory
-        uses: Arbeidstilsynet/action-parent-dir@v1
+      - uses: Arbeidstilsynet/action-parent-dir@v1
         id: get_parent_dir
         with:
           path: './some/subdir/file.txt'
