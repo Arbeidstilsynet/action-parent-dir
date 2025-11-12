@@ -35,3 +35,9 @@ jobs:
       - name: Use parent directory
         run: echo "Parent dir is ${{ steps.get_parent_dir.outputs.parent_dir }}"
 ```
+
+## Versioning
+
+This repository uses a simple versioning system based on the `VERSION` file.
+When you update the `VERSION` file and push to `main`, a Git tag with that version is created or updated automatically by the workflow.
+If you make breaking changes to the action, bump the version and update `CHANGELOG.md`.
